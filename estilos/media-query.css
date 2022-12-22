@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-
+    /*  TELA TABLET */
 
     body{
         background-image: linear-gradient(to top, rgb(44, 43, 43), rgb(11, 72, 86));
@@ -9,6 +9,7 @@
 
     section#login{
         width: 80vw;
+        height: 320px;
     }
     section#login > div#imagem{
         float: left;
@@ -17,19 +18,26 @@
     }
     section#login > div#formulario{
         float: right;
-        width: 70%;
+        width: 60%;
+        margin-right: 5%;
     }
+    div#formulario > p {
+        font-size: 0.9em;
+        margin: 15px 0px;
+     }
 }
 
 
 @media screen and (min-width: 992px) {
-    
+    /*  TELA DESKTOP */
     body{
         background-image: linear-gradient(to top, rgb(44, 43, 43), rgb(11, 72, 86));
     }
     section#login {
         width: 950px;
+        height: 350px;
     }
+
 
     section#login > div#imagem{
         float: right;
@@ -38,13 +46,15 @@
     }
     section#login > div#formulario{
         float: left;
-        width: 50%;
+        width: 40%;
+        margin-left: 5%;
     }
     div#formulario > h1{
         font-size: 2em;
     }
     
     div#formulario > p {
-        font-size: 1.2em;
+        font-size: 1em;
+        margin: 20px 0px;
      }
 }
